@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="heading" style="margin-left: -35px;">
+            <span >Weather report</span>    
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="main_header">
+                <span>Enter the city name</span>
+            </div>
+            <div class="main2">
+                    <input type="text" name="text" id="ct">
+                    <button class="btn1" onclick="getWeather()">Get Report</button>
+                <hr style="margin-top: 20px; margin-bottom: 10px;">
+                <div class="results">
+                    <div class="results_header">
+                        <span>Report:</span>
+                    </div>
+                    <div class="result">
+                        <div class="weather_icon">
+                            <img src="" alt="weather icon" id="image"><br>
+                            <span style="font-size: 20px;">Feels Like : <span id="feelsLike" style="font-size: 20px;"></span></span>
+                        </div>
+                        <div class="cityName">
+                            <span>City name:</span><span> </span><span id="cityName"></span><br>
+                            <span>Temperature: </span><span> </span><span id="temp_c"></span><br>
+                            <span>Condition:</span><span> </span><span id="condition"></span><br>
+                            <span>Wind Speed: <span id="windspeed"></span></span>
+                            <span>Humidity: <span id="humidity"></span></span>
+                            <div class="last-update">
+                                <span class="lst-update">Last upadted at : <span id="update"></span></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+             
+                </div>
+            </div>
+           
+        </div>
+      
+    </div>
+   
+  
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <footer>
+        <div class="credit" style="margin-left: -40px
+        ;">
+            <span>Made by Bhairav</span>
+        </div>
+    </footer>
+</body>
+</html>
